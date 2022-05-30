@@ -1,0 +1,262 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	
+	<title>Informatyka - Klasa 1a | SongLists</title>
+	
+	<meta name="description" content="temp" />
+	
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="stylesheet" href="css/fontello.css" type="text/css" />
+	<link href='http://fonts.googleapis.com/css?family=Lato|Josefin+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="jquery.scrollTo.min.js"></script>
+	<script>
+		jQuery(function($)
+		{	
+			//scroll-reset
+			$.scrollTo(0);
+			
+			$('#link1').click(function() { $.scrollTo($('#facelift'), 500); });
+			$('#link2').click(function() { $.scrollTo($('#dirt'), 500); });
+			$('#link3').click(function() { $.scrollTo($('#st'), 500); });
+			$('#link4').click(function() { $.scrollTo($('#mtv'), 500); });
+			$('#link5').click(function() { $.scrollTo($('#bgwtb'), 500); });
+			$('#link6').click(function() { $.scrollTo($('#tdpdh'), 500); });
+			$('.scrollup').click(function() { $.scrollTo($('body'), 1000); });
+			
+		});
+		$(window).scroll(function()
+		{
+			if($(this).scrollTop()>300) $('.scrollup').fadeIn();
+			else $('.scrollup').fadeOut();		
+		}
+		);
+	
+	
+	</script>
+	
+</head>
+
+<body>
+	<div class="wrapper">
+	<a href="#" class="scrollup"> </a>
+		<div class="header">
+			<div class="logo"> <i class="icon-music-outline"></i> SongLists.com</div>
+		</div>
+		<div class="nav">
+			<ol class="top">
+				<li><a href="index.html">Strona główna</a></li>
+				<li><a>Rock</a>
+					<ul>
+						<li><a href="acdc.html">AC/DC</a></li>
+						<li><a href="led.html">Led Zeppelin</a></li>
+					</ul>
+				</li>
+				<li><a>Metal</a>
+					<ul>
+						<li><a href="ratm.html">RATM</a></li>
+						<li><a href="judas.html">Judas Priest</a></li>
+						<li><a href="black.html">Black Sabbath</a></li>
+					</ul>
+				</li>
+				<li><a>Grunge</a>
+					<ul>
+					<li><a href="nirvana.html">Nirvana</a></li>
+					<li><a href="aic.html">Alice in Chains</a></li>
+					<li><a href="sound.html">Soundgarden</a></li>
+					</ul>
+				</li>
+				<li><a>Progressive</a>
+					<ul>
+					<li><a href="pink.html">Pink Floyd</a></li>
+					<li><a href="beatles.html">The Beatles</a></li>
+					<li><a href="doors.html">The Doors</a></li>
+					</ul>
+				</li>
+			</ol>
+		</div>
+		<div class="content">
+			<div class="spis"> Dyskografia Alice in Chains
+						<ol class="albums">
+							<li><a id="link1" href="#">Facelift (1990)</a></li>
+							<li><a id="link2" href="#">Dirt (1992)</a></li>
+							<li><a id="link3" href="#">Alice in Chains (Self-Titled) (1995)</a></li>
+							<li><a id="link4" href="#">MTV Unplugged (1996)</a></li>
+							<li id="facelift"><a id="link5" href="#">Black Gives Way to Blue (2009)</a></li>
+							<li><a id="link6" href="#">The Devil Put Dinosaurs Here (2013)</a></li>
+						</ol>
+			</div>
+			<div class="slajd">
+				<h1>
+					<div style="width:790px; background-color:#64878E;padding:5px;font-weight:700;color:#fff;">
+						Facelift
+					</div>
+				</h1>
+				<div style="float:right;"><img src="img/fl.jpg"></div>
+				<ol class="in">
+					<li>We Die Young</li>
+					<li>Man in the Box</li>
+					<li>Sea of Sorrow</li>
+					<li>Bleed the Freak</li>
+					<li>I Can't Remember</li>
+					<li>Love, Hate, Love</li>
+					<li>It Ain't Like That</li>
+					<li>Sunshine</li>
+					<li>Put You Down</li>
+					<li>Confusion</li>
+					<li id="dirt">I Know Somethin (Bout You)</li>
+					<li>Real Thing</li>
+				</ol>
+				<div style="clear:both;"></div>
+			</div>
+			<div class="slajd">
+				<h1>
+					<div style="width:790px; background-color:#64878E;padding:5px;font-weight:700;color:#fff;">
+						Dirt
+					</div>
+				</h1>
+				<div style="float:right;"><img src="img/dirt.jpg"></div>
+				<ol class="in">
+					<li>Them Bones</li>
+					<li>Dam That River</li>
+					<li>Rain When I Die</li>
+					<li>Down in a Hole</li>
+					<li>Sickman</li>
+					<li>Rooster</li>
+					<li>Junkhead</li>
+					<li>Dirt</li>
+					<li>God Smack</li>
+					<li>Untitled</li>
+					<li>Hate to Feel</li>
+					<li id="st">Angry Chair</li>
+					<li>Would?</li>
+				</ol>
+				<div style="clear:both;"></div>
+			</div>
+			<div class="slajd">
+				<h1>
+					<div style="width:790px; background-color:#64878E;padding:5px;font-weight:700;color:#fff;">
+						Alice in Chains (Self-Titled)
+					</div>
+				</h1>
+				<div style="float:right;"><img src="img/st.jpg"></div>
+				<ol class="in">
+					<li>Grind</li>
+					<li>Brush Away</li>
+					<li>Sludge Factory</li>
+					<li>Heaven Beside You</li>
+					<li>Head Creeps</li>
+					<li>Again</li>
+					<li>Shame in You</li>
+					<li>God Am</li>
+					<li>So Close</li>
+					<li>Nothin' Song</li>
+					<li id="mtv">Frogs</li>
+					<li>Over Now</li>
+				</ol>
+				<div style="clear:both;"></div>
+			</div>
+			<div class="slajd">
+				<h1>
+					<div style="width:790px; background-color:#64878E;padding:5px;font-weight:700;color:#fff;">
+						MTV Unplugged
+					</div>
+				</h1>
+				<div style="float:right;"><img src="img/mtv.jpg"></div>
+				<ol class="in">
+					<li>Nutshell</li>
+					<li>Brother</li>
+					<li>Noe Excuses</li>
+					<li>Sludge Factory</li>
+					<li>Down in a Hole</li>
+					<li>Angry Chair</li>
+					<li>Rooster</li>
+					<li>Got Me Wrong</li>
+					<li>Heaven Beside You</li>
+					<li>Would?</li>
+					<li>Frogs</li>
+					<li id="bgwtb">Over Now</li>
+					<li>Killer Is Me</li>
+				</ol>
+				<div style="clear:both;"></div>
+			</div>
+			<div class="slajd">
+				<h1>
+					<div style="width:790px; background-color:#64878E;padding:5px;font-weight:700;color:#fff;">
+						Black Gives Way to Blue
+					</div>
+				</h1>
+				<div style="float:right;"><img src="img/bgwtb.jpg"></div>
+				<ol class="in">
+					<li>All Secrets Known</li>
+					<li>Check My Brain</li>
+					<li>Last of My Kind</li>
+					<li>Your Decision</li>
+					<li>A Looking in View</li>
+					<li>When the Sun Rose Again</li>
+					<li>Acid Bubble</li>
+					<li>Lesson Learned</li>
+					<li>Take Her Out</li>
+					<li id="tdpdh">Private Hell</li>
+					<li>Black Gives Way to Blue</li>
+				</ol>
+				<div style="clear:both;"></div>
+			</div>
+			<div class="slajd">
+				<h1>
+					<div style="width:790px; background-color:#64878E;padding:5px;font-weight:700;color:#fff;">
+						The Devil Put Dinosaurs Here
+					</div>
+					<div style="float:right;"><img src="img/tdpdh.png"></div>
+				</h1>
+				<ol class="in">
+					<li>Hollow</li>
+					<li>Pretty Done</li>
+					<li>Stone</li>
+					<li>Voices</li>
+					<li>The Devil Put Dinosaurs Here</li>
+					<li>Lab Monkey</li>
+					<li>Low Ceiling</li>
+					<li>Breath on a Windows</li>
+					<li>Scalpel</li>
+					<li>Phantom Limb</li>
+					<li>Hung on a Hook</li>
+					<li>Choke</li>
+				</ol>
+				<div style="clear:both;"></div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">2022 &copy; Jan Fuksiewicz</div>
+	<script src="jquery-1.11.3.min.js"></script>
+	<script>
+
+	$(document).ready(function() {
+	var NavY = $('.nav').offset().top;
+	 
+	var stickyNav = function(){
+	var ScrollY = $(window).scrollTop();
+		  
+	if (ScrollY > NavY) { 
+		$('.nav').addClass('sticky');
+	} else {
+		$('.nav').removeClass('sticky'); 
+	}
+	};
+	 
+	stickyNav();
+	 
+	$(window).scroll(function() {
+		stickyNav();
+	});
+	});
+	
+	</script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	
+	<title>Informatyka - Klasa 1a | SongLists</title>
+	
+	<meta name="description" content="temp" />
+	
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link rel="stylesheet" href="css/fontello.css" type="text/css" />
+	<link href='http://fonts.googleapis.com/css?family=Lato|Josefin+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="jquery.scrollTo.min.js"></script>
+	<script>
+		jQuery(function($)
+		{	
+			//scroll-reset
+			$.scrollTo(0);
+			
+			$('#link1').click(function() { $.scrollTo($('#budowa-crt'), 500); });
+			$('#link2').click(function() { $.scrollTo($('#dzial-crt'), 500); });
+			$('#link3').click(function() { $.scrollTo($('#maska'), 500); });
+			$('#link4').click(function() { $.scrollTo($('#wad-crt'), 500); });
+			$('#link5').click(function() { $.scrollTo($('#par-crt'), 500); });
+			$('#link6').click(function() { $.scrollTo($('#budowa-lcd'), 500); });
+			$('#link7').click(function() { $.scrollTo($('#dzial-lcd'), 500); });
+			$('#link8').click(function() { $.scrollTo($('#matryce-lcd'), 500); });
+			$('#link9').click(function() { $.scrollTo($('#wad-lcd'), 500); });
+			$('#link10').click(function() { $.scrollTo($('#par-lcd'), 500); });
+			$('#link11').click(function() { $.scrollTo($('#dsub'), 500); });
+			$('#link12').click(function() { $.scrollTo($('#dvi'), 500); });
+			$('#link13').click(function() { $.scrollTo($('#hd'), 500); });
+			$('#link14').click(function() { $.scrollTo($('#przysz'), 500); });
+			$('#link15').click(function() { $.scrollTo($('#zrodla'), 500); });
+			$('.scrollup').click(function() { $.scrollTo($('body'), 1000); });
+			
+		});
+		$(window).scroll(function()
+		{
+			if($(this).scrollTop()>300) $('.scrollup').fadeIn();
+			else $('.scrollup').fadeOut();		
+		}
+		);
+	
+	
+	</script>
+	
+</head>
+
+<body>
+	<div class="wrapper">
+	<a href="#" class="scrollup"> </a>
+		<div class="header">
+			<div class="logo"> <i class="icon-music-outline"></i> SongLists.com</div>
+		</div>
+		<div class="nav">
+			<ol class="top">
+				<li><a href="index.html">Strona główna</a></li>
+				<li><a>Rock</a>
+					<ul>
+						<li><a href="acdc.html">AC/DC</a></li>
+						<li><a href="led.html">Led Zeppelin</a></li>
+					</ul>
+				</li>
+				<li><a>Metal</a>
+					<ul>
+						<li><a href="ratm.html">RATM</a></li>
+						<li><a href="judas.html">Judas Priest</a></li>
+						<li><a href="black.html">Black Sabbath</a></li>
+					</ul>
+				</li>
+				<li><a>Grunge</a>
+					<ul>
+					<li><a href="nirvana.html">Nirvana</a></li>
+					<li><a href="aic.html">Alice in Chains</a></li>
+					<li><a href="sound.html">Soundgarden</a></li>
+					</ul>
+				</li>
+				<li><a>Progressive</a>
+					<ul>
+					<li><a href="pink.html">Pink Floyd</a></li>
+					<li><a href="beatles.html">The Beatles</a></li>
+					<li><a href="doors.html">The Doors</a></li>
+					</ul>
+				</li>
+			</ol>
+		</div>
+		<div class="content">
+		
+		</div>
+	</div>
+	<div class="footer">2022 &copy; Jan Fuksiewicz</div>
+	<script src="jquery-1.11.3.min.js"></script>
+	<script>
+
+	$(document).ready(function() {
+	var NavY = $('.nav').offset().top;
+	 
+	var stickyNav = function(){
+	var ScrollY = $(window).scrollTop();
+		  
+	if (ScrollY > NavY) { 
+		$('.nav').addClass('sticky');
+	} else {
+		$('.nav').removeClass('sticky'); 
+	}
+	};
+	 
+	stickyNav();
+	 
+	$(window).scroll(function() {
+		stickyNav();
+	});
+	});
+	
+	</script>
+</body>
+</html>

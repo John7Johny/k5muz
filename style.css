@@ -1,0 +1,221 @@
+body
+{
+	background-color: #3C4143;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	margin: 0 !important;
+}
+
+.header
+{
+	width: 1000px;
+	height: 40px;
+	font-size: 35px;
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 35px 0px;
+	letter-spacing: 2px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.logo
+{
+	width: 500px;
+	font-size: 48px;
+	border: 2px solid #989EA0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.nav
+{
+	width: 100%;
+	padding: 10px 0px;
+	background-color: #4bb528;
+	text-align: center;
+	border-top: 2px solid #2e6619;
+	border-bottom: 2px solid #2e6619;
+	height: 40px;
+}
+
+.wrapper
+{
+	width: 100%;
+}
+
+.content
+{
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: justify;
+	color: white;
+}
+
+.spis
+{
+	padding-top: 25px;
+	font-size: 30px;
+	text-decoration: none;
+}
+
+ul
+{
+	text-decoration: none;
+	color: white;
+}
+
+.sticky
+{
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 100;
+}
+
+.scrollup
+{
+	width: 64px;
+	height: 64px;
+	text-decoration: none;
+	background: url("img/up.png") no-repeat 0px 0px;
+	position: fixed;
+	right: 50px;
+	bottom: 50px;
+	display: none;
+}
+
+.footer
+{
+	border-top: 2px solid #06661a;
+	padding: 0px 10px;
+}
+
+ol.top
+{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	font-size: 18px;
+	height: 35px;
+	line-height: 200%;
+	display: inline-block;
+}
+
+ol.top a
+{
+	color: #ffffff;
+	text-decoration: none;
+	display: block;
+}
+
+ol.top > li
+{
+	float: left;
+	width: 150px;
+	height: 40px;
+	border-right: 2px dashed #2e6619;
+}
+
+ol.top > li:first-child
+{
+	border-left: 2px dashed #2e6619;
+}
+
+ol.top > li:hover
+{
+	background-color: #9AD87E;
+}
+
+ol.top >li:hover > a
+{
+	color: #2e6619;
+}
+
+ol.top >li > ul
+{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	height: 40px;
+	display: none;
+}
+
+ol.top > li:hover > ul
+{
+	display:block;
+}
+
+ol.top >li > ul > li
+{
+	background-color: #9AD87E;
+	position: relative;
+	z-index: 100;
+	border-top: 1px dashed #2e6619;
+}
+
+ol.top >li > ul > li:hover
+{
+	background-color: #4bb528;
+}
+
+ol.top >li > ul > li:hover > a
+{
+	color: #2e6619;
+}
+
+ol.albums
+{
+	color: #ffffff;
+	font-size: 24px;
+	text-decoration: none;
+}
+
+a:link
+{
+	color: white;
+	text-decoration: none;
+}
+
+a:visited
+{
+	color: white;
+	text-decoration: none;
+}
+
+a:hover
+{
+	color: #4bb528;
+	text-decoration: none;
+}
+
+a:active
+{
+	color: white;
+	text-decoration: none;
+}
+
+h1
+{
+	font-size: 24px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.slajd
+{
+	width: 800px;
+	padding: 20px 40px;
+	text-align: justify;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+ol.in
+{
+	font-size: 20px;
+	line-height: 25px;
+}
